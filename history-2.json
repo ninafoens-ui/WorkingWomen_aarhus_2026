@@ -1,0 +1,2698 @@
+[
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "gender",
+          "expression": "value",
+          "columnName": "gender",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            },
+            {
+              "v": {
+                "v": "mand",
+                "l": "mand"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "marital_status",
+          "expression": "value",
+          "columnName": "marital_status",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "gift",
+                "l": "gift"
+              }
+            },
+            {
+              "v": {
+                "v": "enkemand",
+                "l": "enkemand"
+              }
+            },
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            },
+            {
+              "v": {
+                "v": "enke",
+                "l": "enke"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "occupation",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "mandens moder der forsørges af ham",
+          "mandens moder der af ham forsørges",
+          "mandens moder, der af ham forsørges",
+          "mandens moder, der forsørges af ham"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "mandens moder der forsørges af ham"
+      },
+      {
+        "from": [
+          "husmand, daglejer",
+          "husmand daglejer",
+          "daglejer, husmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmand, daglejer"
+      },
+      {
+        "from": [
+          "hans moder som af ham forsørges",
+          "hans moder, som af ham forsørges",
+          "hans moder, som forsørges af ham"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hans moder som af ham forsørges"
+      },
+      {
+        "from": [
+          "kirkesanger og skolelærer",
+          "skolelærer og kirkesanger"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "kirkesanger og skolelærer"
+      },
+      {
+        "from": [
+          "deres søn, hjulmagersvend",
+          "hjulmagersvend, deres søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres søn, hjulmagersvend"
+      },
+      {
+        "from": [
+          "hendes datter, skrædderpige",
+          "skrædderpige, hendes datter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hendes datter, skrædderpige"
+      },
+      {
+        "from": [
+          "mandens broder der af ham forsørges",
+          "mandens broder, der af ham forsørges"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "mandens broder der af ham forsørges"
+      },
+      {
+        "from": [
+          "deres søn, tjenestekarl",
+          "tjenestekarl, deres søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres søn, tjenestekarl"
+      },
+      {
+        "from": [
+          "hendes datter, skrædderske",
+          "skrædderske, hendes datter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hendes datter, skrædderske"
+      },
+      {
+        "from": [
+          "aftægtskone, mandens moder",
+          "mandens moder, aftægtskone"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "aftægtskone, mandens moder"
+      },
+      {
+        "from": [
+          "husmand, jordbruger, væver",
+          "husmand, væver, jordbruger"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmand, jordbruger, væver"
+      },
+      {
+        "from": [
+          "hendes datter, sypige",
+          "sypige, hendes datter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hendes datter, sypige"
+      },
+      {
+        "from": [
+          "hans kone, jordmoder",
+          "jordmoder, hans kone"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hans kone, jordmoder"
+      },
+      {
+        "from": [
+          "discipel i Århus Realskole, deres søn",
+          "deres søn, discipel i Århus Realskole"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "discipel i Århus Realskole, deres søn"
+      },
+      {
+        "from": [
+          "inderste og skomager",
+          "skomager og inderste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "inderste og skomager"
+      },
+      {
+        "from": [
+          "indsidder, almisselem",
+          "almisselem, indsidder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "indsidder, almisselem"
+      },
+      {
+        "from": [
+          "husmand lever af hans jordlod",
+          "husmand, lever af hans jordlod"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmand lever af hans jordlod"
+      },
+      {
+        "from": [
+          "husfaders moder, der af ham forsørges",
+          "husfaders moder, der forsørges af ham"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husfaders moder, der af ham forsørges"
+      },
+      {
+        "from": [
+          "plejebarn i søns sted",
+          "plejebarn, i søns sted"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "plejebarn i søns sted"
+      },
+      {
+        "from": [
+          "korporal i 3. Regiment",
+          "korporal i 3. regiment"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "korporal i 3. Regiment"
+      },
+      {
+        "from": [
+          "husmandskone, manden har fast tjeneste i Århus",
+          "husmandskone manden har fast tjeneste i Århus"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmandskone, manden har fast tjeneste i Århus"
+      },
+      {
+        "from": [
+          "husmand og skovfoged",
+          "skovfoged og husmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmand og skovfoged"
+      },
+      {
+        "from": [
+          "skolelærer-enke, lever af pension",
+          "skolelærerenke, lever af pension"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "skolelærer-enke, lever af pension"
+      },
+      {
+        "from": [
+          "deres søn, smedesvend",
+          "smedesvend, deres søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres søn, smedesvend"
+      },
+      {
+        "from": [
+          "deres datter, væverske",
+          "væverske, deres datter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres datter, væverske"
+      },
+      {
+        "from": [
+          "indsidder og daglejer",
+          "daglejer og indsidder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "indsidder og daglejer"
+      },
+      {
+        "from": [
+          "husmand og daglejer",
+          "daglejer og husmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmand og daglejer"
+      },
+      {
+        "from": [
+          "deres søn, tilsøs",
+          "tilsøs, deres søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres søn, tilsøs"
+      },
+      {
+        "from": [
+          "hendes uægte søn",
+          "hendes søn, uægte"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hendes uægte søn"
+      },
+      {
+        "from": [
+          "matros, deres søn",
+          "deres søn, matros"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "matros, deres søn"
+      },
+      {
+        "from": [
+          "inderste og skrædder",
+          "skrædder og inderste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "inderste og skrædder"
+      },
+      {
+        "from": [
+          "deres datter, tjenestepige",
+          "deres datter tjenestepige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres datter, tjenestepige"
+      },
+      {
+        "from": [
+          "indsidder, væver",
+          "væver, indsidder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "indsidder, væver"
+      },
+      {
+        "from": [
+          "husfaders fader, af ham forsørges",
+          "husfaders fader, forsørges af ham"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husfaders fader, af ham forsørges"
+      },
+      {
+        "from": [
+          "deres søn, væver",
+          "væver, deres søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres søn, væver"
+      },
+      {
+        "from": [
+          "husmand og hjulmand",
+          "hjulmand og husmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmand og hjulmand"
+      },
+      {
+        "from": [
+          "dragon i 3. Regiment",
+          "dragon i 3. regiment"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "dragon i 3. Regiment"
+      },
+      {
+        "from": [
+          "deres datter, skrædderpige",
+          "skrædderpige, deres datter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres datter, skrædderpige"
+      },
+      {
+        "from": [
+          "adjunkt ved Realskolen",
+          "adjunkt ved realskolen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "adjunkt ved Realskolen"
+      },
+      {
+        "from": [
+          "murersvend, hendes søn",
+          "hendes søn, murersvend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "murersvend, hendes søn"
+      },
+      {
+        "from": [
+          "deres datter, syning",
+          "syning, deres datter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres datter, syning"
+      },
+      {
+        "from": [
+          "hendes datter, tjenestepige",
+          "tjenestepige, hendes datter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hendes datter, tjenestepige"
+      },
+      {
+        "from": [
+          "aftægtsmand, husfaders fader",
+          "husfaders fader, aftægtsmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "aftægtsmand, husfaders fader"
+      },
+      {
+        "from": [
+          "plejebarn i datters sted",
+          "plejebarn, i datters sted"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "plejebarn i datters sted"
+      },
+      {
+        "from": [
+          "lever af karten, spinde osv.",
+          "lever af karten, spinde osv"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "lever af karten, spinde osv."
+      },
+      {
+        "from": [
+          "deres søn, træskomand",
+          "træskomand, deres søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres søn, træskomand"
+      },
+      {
+        "from": [
+          "hendes søn, tømmermand",
+          "tømmermand, hendes søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hendes søn, tømmermand"
+      },
+      {
+        "from": [
+          "inderste, stenhugger",
+          "stenhugger, inderste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "inderste, stenhugger"
+      },
+      {
+        "from": [
+          "aftægtskone, konens moder",
+          "konens moder, aftægtskone"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "aftægtskone, konens moder"
+      },
+      {
+        "from": [
+          "husfaders svigermoder som af ham forsørges",
+          "husfaders svigermoder, som af ham forsørges"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husfaders svigermoder som af ham forsørges"
+      },
+      {
+        "from": [
+          "hendes søn, sømand",
+          "sømand, hendes søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hendes søn, sømand"
+      },
+      {
+        "from": [
+          "ejer af huset, væver",
+          "væver, ejer af huset"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ejer af huset, væver"
+      },
+      {
+        "from": [
+          "indsidder og væver",
+          "væver og indsidder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "indsidder og væver"
+      },
+      {
+        "from": [
+          "bødker, indsidder",
+          "indsidder, bødker"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "bødker, indsidder"
+      },
+      {
+        "from": [
+          "hans søn, skrædder",
+          "skrædder, hans søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hans søn, skrædder"
+      },
+      {
+        "from": [
+          "husmand, lever af sin lod",
+          "husmand lever af sin lod"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmand, lever af sin lod"
+      },
+      {
+        "from": [
+          "hans kone, sælger brød",
+          "sælger brød, hans kone"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hans kone, sælger brød"
+      },
+      {
+        "from": [
+          "husmand og skrædder",
+          "skrædder og husmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmand og skrædder"
+      },
+      {
+        "from": [
+          "inderste og væver",
+          "væver og inderste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "inderste og væver"
+      },
+      {
+        "from": [
+          "husmandsenke lever af håndgerning",
+          "husmandsenke, lever af håndgerning"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmandsenke lever af håndgerning"
+      },
+      {
+        "from": [
+          "husfaders moder, af ham forsørges",
+          "husfaders moder, forsørges af ham"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husfaders moder, af ham forsørges"
+      },
+      {
+        "from": [
+          "inderste og hjulmand",
+          "hjulmand og inderste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "inderste og hjulmand"
+      },
+      {
+        "from": [
+          "husmand og væver",
+          "væver og husmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmand og væver"
+      },
+      {
+        "from": [
+          "husfaders fader, som af ham forsørges",
+          "husfaders fader som af ham forsørges"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husfaders fader, som af ham forsørges"
+      },
+      {
+        "from": [
+          "hendes søn, skrædder",
+          "skrædder, hendes søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hendes søn, skrædder"
+      },
+      {
+        "from": [
+          "deres søn, daglejer",
+          "daglejer, deres søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres søn, daglejer"
+      },
+      {
+        "from": [
+          "ingen (næringsvej)",
+          "ingen næringsvej"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ingen (næringsvej)"
+      },
+      {
+        "from": [
+          "inderste, aftægtsmand",
+          "aftægtsmand, inderste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "inderste, aftægtsmand"
+      },
+      {
+        "from": [
+          "husfaders moder, som af ham forsørges",
+          "husfaders moder som af ham forsørges"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husfaders moder, som af ham forsørges"
+      },
+      {
+        "from": [
+          "husfaders søster, der af ham forsørges",
+          "husfaders søster der af ham forsørges"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husfaders søster, der af ham forsørges"
+      },
+      {
+        "from": [
+          "murersvend, logerende",
+          "logerende, murersvend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "murersvend, logerende"
+      },
+      {
+        "from": [
+          "aftægtskone, der forsørges af husfaderen",
+          "aftægtskone der af husfaderen forsørges"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "aftægtskone, der forsørges af husfaderen"
+      },
+      {
+        "from": [
+          "snedkerlærling",
+          "Snedkerlærling"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "snedkerlærling"
+      },
+      {
+        "from": [
+          "husmand, lever af sin jord",
+          "husmand lever af sin jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmand, lever af sin jord"
+      },
+      {
+        "from": [
+          "deres datter, skrædderske",
+          "skrædderske, deres datter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres datter, skrædderske"
+      },
+      {
+        "from": [
+          "aftægtsmand, husmoderens fader",
+          "husmoderens fader, aftægtsmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "aftægtsmand, husmoderens fader"
+      },
+      {
+        "from": [
+          "snedker og tømmermand",
+          "tømmermand og snedker"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "snedker og tømmermand"
+      },
+      {
+        "from": [
+          "gårdmand, sognefoged og sogneforstander",
+          "sognefoged og sogneforstander, gårdmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "gårdmand, sognefoged og sogneforstander"
+      },
+      {
+        "from": [
+          "inderste og træskomand",
+          "træskomand og inderste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "inderste og træskomand"
+      },
+      {
+        "from": [
+          "husmand og smed",
+          "smed og husmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmand og smed"
+      },
+      {
+        "from": [
+          "sømand, logerende",
+          "sømand logerende"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "sømand, logerende"
+      },
+      {
+        "from": [
+          "lever af at sy og vaske",
+          "lever af at vaske og sy"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "lever af at sy og vaske"
+      },
+      {
+        "from": [
+          "aftægtsmand, konens fader",
+          "konens fader, aftægtsmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "aftægtsmand, konens fader"
+      },
+      {
+        "from": [
+          "husfaderens søn, styrmand",
+          "styrmand, husfaderens søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husfaderens søn, styrmand"
+      },
+      {
+        "from": [
+          "husmand, smed",
+          "smed, husmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmand, smed"
+      },
+      {
+        "from": [
+          "inderste og daglejer",
+          "daglejer og inderste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "inderste og daglejer"
+      },
+      {
+        "from": [
+          "husmand og snedker",
+          "snedker og husmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmand og snedker"
+      },
+      {
+        "from": [
+          "deres datter, almisselem",
+          "almisselem, deres datter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres datter, almisselem"
+      },
+      {
+        "from": [
+          "deres søn, væversvend",
+          "væversvend, deres søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres søn, væversvend"
+      },
+      {
+        "from": [
+          "kontorist",
+          "Kontorist"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "kontorist"
+      },
+      {
+        "from": [
+          "husmandsenke lever af håndarbejde",
+          "husmandsenke, lever af håndarbejde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmandsenke lever af håndarbejde"
+      },
+      {
+        "from": [
+          "hendes søn, snedker",
+          "snedker, hendes søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hendes søn, snedker"
+      },
+      {
+        "from": [
+          "hendes datter, håndarbejde",
+          "håndarbejde, hendes datter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hendes datter, håndarbejde"
+      },
+      {
+        "from": [
+          "hendes uægte datter",
+          "hendes datter, uægte"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hendes uægte datter"
+      },
+      {
+        "from": [
+          "husmand, lever af sin jordlod",
+          "husmand lever af sin jordlod"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmand, lever af sin jordlod"
+      },
+      {
+        "from": [
+          "indsidder, tjenestekarl",
+          "tjenestekarl, indsidder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "indsidder, tjenestekarl"
+      },
+      {
+        "from": [
+          "indsidder og fattiglem",
+          "fattiglem og indsidder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "indsidder og fattiglem"
+      },
+      {
+        "from": [
+          "indsidder og skrædder",
+          "skrædder og indsidder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "indsidder og skrædder"
+      },
+      {
+        "from": [
+          "deres datter, væver",
+          "væver, deres datter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres datter, væver"
+      },
+      {
+        "from": [
+          "husmand, væver",
+          "væver, husmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmand, væver"
+      },
+      {
+        "from": [
+          "hendes datter, væverske",
+          "væverske, hendes datter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hendes datter, væverske"
+      },
+      {
+        "from": [
+          "deres søn, væverlærling",
+          "væverlærling, deres søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres søn, væverlærling"
+      },
+      {
+        "from": [
+          "forsørges af husfaderen",
+          "af husfaderen forsørges"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "forsørges af husfaderen"
+      },
+      {
+        "from": [
+          "deres søn, discipel i Århus Latinskole",
+          "discipel i Århus Latinskole, deres søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres søn, discipel i Århus Latinskole"
+      },
+      {
+        "from": [
+          "deres søn, musikant",
+          "musikant, deres søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres søn, musikant"
+      },
+      {
+        "from": [
+          "daglejer, lever af sin jordlod",
+          "lever af sin jordlod, daglejer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "daglejer, lever af sin jordlod"
+      },
+      {
+        "from": [
+          "hans søster, husholder",
+          "husholder, hans søster"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hans søster, husholder"
+      },
+      {
+        "from": [
+          "husmand, lever af en jordlod",
+          "husmand lever af en jordlod"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmand, lever af en jordlod"
+      },
+      {
+        "from": [
+          "fattigfoged, almisselem",
+          "almisselem, fattigfoged"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "fattigfoged, almisselem"
+      },
+      {
+        "from": [
+          "indsidder, daglejer",
+          "daglejer, indsidder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "indsidder, daglejer"
+      },
+      {
+        "from": [
+          "hans søn, murerlærling",
+          "murerlærling, hans søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hans søn, murerlærling"
+      },
+      {
+        "from": [
+          "hendes søn, væver",
+          "væver, hendes søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hendes søn, væver"
+      },
+      {
+        "from": [
+          "kirkesanger, skolelærer",
+          "skolelærer, kirkesanger"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "kirkesanger, skolelærer"
+      },
+      {
+        "from": [
+          "deres søn, snedkerlærling",
+          "snedkerlærling, deres søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres søn, snedkerlærling"
+      },
+      {
+        "from": [
+          "deres søn, skomagersvend",
+          "skomagersvend, deres søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres søn, skomagersvend"
+      },
+      {
+        "from": [
+          "inderste, skomager",
+          "skomager, inderste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "inderste, skomager"
+      },
+      {
+        "from": [
+          "hans søn, smedesvend",
+          "smedesvend, hans søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hans søn, smedesvend"
+      },
+      {
+        "from": [
+          "husfaders svigerfader der af ham forsørges",
+          "husfaders svigerfader, der af ham forsørges"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husfaders svigerfader der af ham forsørges"
+      },
+      {
+        "from": [
+          "deres søn, træskokarl",
+          "træskokarl, deres søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres søn, træskokarl"
+      },
+      {
+        "from": [
+          "plejesøn i søns sted",
+          "plejesøn, i søns sted"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "plejesøn i søns sted"
+      },
+      {
+        "from": [
+          "husfaderens fader, som af ham forsørges",
+          "husfaderens fader som af ham forsørges"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husfaderens fader, som af ham forsørges"
+      },
+      {
+        "from": [
+          "sømand, deres søn",
+          "deres søn, sømand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "sømand, deres søn"
+      },
+      {
+        "from": [
+          "hendes søn, træskomager",
+          "træskomager, hendes søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hendes søn, træskomager"
+      },
+      {
+        "from": [
+          "husmand, jordbruger, skrædder",
+          "husmand, skrædder, jordbruger"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmand, jordbruger, skrædder"
+      },
+      {
+        "from": [
+          "deres søn, skrædder",
+          "skrædder, deres søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres søn, skrædder"
+      },
+      {
+        "from": [
+          "husmand, jordbruger, smed",
+          "husmand, smed, jordbruger"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmand, jordbruger, smed"
+      },
+      {
+        "from": [
+          "deres søn, tømmermand",
+          "tømmermand, deres søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres søn, tømmermand"
+      },
+      {
+        "from": [
+          "daglejer og træskomand",
+          "træskomand og daglejer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "daglejer og træskomand"
+      },
+      {
+        "from": [
+          "inderste, almisselem",
+          "almisselem, inderste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "inderste, almisselem"
+      },
+      {
+        "from": [
+          "deres datter, sypige",
+          "sypige, deres datter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres datter, sypige"
+      },
+      {
+        "from": [
+          "husfaders moder, aftægtskone",
+          "aftægtskone, husfaders moder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husfaders moder, aftægtskone"
+      },
+      {
+        "from": [
+          "indsidder, sypige",
+          "sypige, indsidder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "indsidder, sypige"
+      },
+      {
+        "from": [
+          "snedker",
+          "snedker ??"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "snedker"
+      },
+      {
+        "from": [
+          "snedkersvend, logerende",
+          "logerende, snedkersvend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "snedkersvend, logerende"
+      },
+      {
+        "from": [
+          "hans kone, væver",
+          "væver, hans kone"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hans kone, væver"
+      },
+      {
+        "from": [
+          "indsidder og aftægtsmand",
+          "aftægtsmand og indsidder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "indsidder og aftægtsmand"
+      },
+      {
+        "from": [
+          "plejedatter i datters sted",
+          "plejedatter, i datters sted"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "plejedatter i datters sted"
+      },
+      {
+        "from": [
+          "hans søn, sømand",
+          "sømand, hans søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hans søn, sømand"
+      },
+      {
+        "from": [
+          "hendes datter, spinderske",
+          "spinderske, hendes datter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hendes datter, spinderske"
+      },
+      {
+        "from": [
+          "hendes søn, bestyrer af gården",
+          "bestyrer af gården, hendes søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hendes søn, bestyrer af gården"
+      },
+      {
+        "from": [
+          "inderste og aftægtsmand",
+          "aftægtsmand og inderste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "inderste og aftægtsmand"
+      }
+    ],
+    "description": "Mass edit cells in column occupation"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "gender",
+          "expression": "value",
+          "columnName": "gender",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            },
+            {
+              "v": {
+                "v": "mand",
+                "l": "mand"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "marital_status",
+          "expression": "value",
+          "columnName": "marital_status",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "gift",
+                "l": "gift"
+              }
+            },
+            {
+              "v": {
+                "v": "enkemand",
+                "l": "enkemand"
+              }
+            },
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            },
+            {
+              "v": {
+                "v": "enke",
+                "l": "enke"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "occupation",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "dragon i 3. D.R.",
+          "dragon i 3. D. R.",
+          "dragon i 3.D.R."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "dragon i 3. D.R."
+      },
+      {
+        "from": [
+          "husfaderens moder",
+          "husmoderens fader"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husfaderens moder"
+      },
+      {
+        "from": [
+          "indsidder, saddelmager",
+          "indsidder, sadelmager"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "indsidder, saddelmager"
+      },
+      {
+        "from": [
+          "inderste, spindekone",
+          "inderste, spinde kone"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "inderste, spindekone"
+      },
+      {
+        "from": [
+          "ejer af huset, daglejer",
+          "lejer af huset, daglejer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ejer af huset, daglejer"
+      },
+      {
+        "from": [
+          "hendes søn, er tilsøs",
+          "hendes søn er til søs"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hendes søn, er tilsøs"
+      },
+      {
+        "from": [
+          "gårdmandsenke",
+          "gårdmands enke"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "gårdmandsenke"
+      },
+      {
+        "from": [
+          "deres søn, er til søs",
+          "deres søn, er tilsøs"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres søn, er til søs"
+      },
+      {
+        "from": [
+          "husfaders svigermoder som af ham forsørges",
+          "husfaders svigermoder som af hamforsørges"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husfaders svigermoder som af ham forsørges"
+      },
+      {
+        "from": [
+          "smedesvend",
+          "smedesvende"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "smedesvend"
+      },
+      {
+        "from": [
+          "lever af sine hænders gerning",
+          "lever af sine hænders gerninger"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "lever af sine hænders gerning"
+      },
+      {
+        "from": [
+          "hendes datter, håndarbejde",
+          "hendes datter, håndarbejder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hendes datter, håndarbejde"
+      },
+      {
+        "from": [
+          "landvæsens lærling",
+          "landvæsenslærling"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "landvæsens lærling"
+      },
+      {
+        "from": [
+          "præsteenke, pension",
+          "præsteenkepension"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "præsteenke, pension"
+      }
+    ],
+    "description": "Mass edit cells in column occupation"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "gender",
+          "expression": "value",
+          "columnName": "gender",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            },
+            {
+              "v": {
+                "v": "mand",
+                "l": "mand"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "marital_status",
+          "expression": "value",
+          "columnName": "marital_status",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "gift",
+                "l": "gift"
+              }
+            },
+            {
+              "v": {
+                "v": "enkemand",
+                "l": "enkemand"
+              }
+            },
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            },
+            {
+              "v": {
+                "v": "enke",
+                "l": "enke"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "occupation",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "lever af sin jordlod",
+          "lever af sin jordlov",
+          "lever af son jordlod"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "lever af sin jordlod"
+      },
+      {
+        "from": [
+          "syjomfru",
+          "syjomfrue"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "syjomfru"
+      },
+      {
+        "from": [
+          "bundtmager",
+          "buntmager"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "bundtmager"
+      },
+      {
+        "from": [
+          "murmester",
+          "muurmester"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "murmester"
+      },
+      {
+        "from": [
+          "inderst og bysmed",
+          "inderste og bysmed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "inderst og bysmed"
+      },
+      {
+        "from": [
+          "hendes barn",
+          "hendes børn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hendes barn"
+      },
+      {
+        "from": [
+          "hans kone, jordemoder",
+          "hans kone, jordmoder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hans kone, jordemoder"
+      },
+      {
+        "from": [
+          "mejerske",
+          "mejersk"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "mejerske"
+      },
+      {
+        "from": [
+          "examinatis juris",
+          "examinatus juris"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "examinatis juris"
+      },
+      {
+        "from": [
+          "musikanter",
+          "musikantes"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "musikanter"
+      },
+      {
+        "from": [
+          "hans husholderske",
+          "hans huusholderske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hans husholderske"
+      },
+      {
+        "from": [
+          "underkoporal",
+          "underkorporal"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "underkoporal"
+      },
+      {
+        "from": [
+          "bundtmagersvend",
+          "buntmagersvend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "bundtmagersvend"
+      },
+      {
+        "from": [
+          "tømmerkarl",
+          "tømrerkarl"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tømmerkarl"
+      },
+      {
+        "from": [
+          "skolediscipel",
+          "skoledicipel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "skolediscipel"
+      },
+      {
+        "from": [
+          "ejer af huset",
+          "lejer af huset"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ejer af huset"
+      },
+      {
+        "from": [
+          "opholdsmand",
+          "opholdmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "opholdsmand"
+      },
+      {
+        "from": [
+          "sadelmagerlærling",
+          "saddelmagerlærling"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "sadelmagerlærling"
+      },
+      {
+        "from": [
+          "hendes slegfredbørn",
+          "hendes slegfredbarn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hendes slegfredbørn"
+      },
+      {
+        "from": [
+          "bryggerpige",
+          "bryggerspige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "bryggerpige"
+      },
+      {
+        "from": [
+          "sivfletter",
+          "sivefletter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "sivfletter"
+      },
+      {
+        "from": [
+          "skovrider",
+          "skovridder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "skovrider"
+      },
+      {
+        "from": [
+          "deres søn, saddelmager",
+          "deres søn, sadelmager"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres søn, saddelmager"
+      },
+      {
+        "from": [
+          "deres datter",
+          "deres datterr"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres datter"
+      },
+      {
+        "from": [
+          "husmand og væver",
+          "husmans og væver"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmand og væver"
+      },
+      {
+        "from": [
+          "lever af sin jordlod",
+          "lever af son jordlod"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "lever af sin jordlod"
+      },
+      {
+        "from": [
+          "inderste og opholdskone",
+          "inderst og opholdskone"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "inderste og opholdskone"
+      },
+      {
+        "from": [
+          "trompeter ved 3. Dragonregim.",
+          "trompeter ved 3. Dragonregm."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "trompeter ved 3. Dragonregim."
+      },
+      {
+        "from": [
+          "boelsmand",
+          "bolsmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "boelsmand"
+      },
+      {
+        "from": [
+          "skrædderske",
+          "skræderske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "skrædderske"
+      },
+      {
+        "from": [
+          "husmoderens moder",
+          "husmoderems moder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmoderens moder"
+      },
+      {
+        "from": [
+          "deres plejebarn",
+          "deres plejebørn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres plejebarn"
+      },
+      {
+        "from": [
+          "ernærer sig med syning",
+          "ernærer sig ved syning"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ernærer sig med syning"
+      },
+      {
+        "from": [
+          "ejer af huset, fisker",
+          "lejer af huset, fisker"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ejer af huset, fisker"
+      },
+      {
+        "from": [
+          "farversvend",
+          "garversvend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "farversvend"
+      },
+      {
+        "from": [
+          "kvartermester ved 3. Dragonregim.",
+          "kvartersmester ved 3. Dragonregim."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "kvartermester ved 3. Dragonregim."
+      },
+      {
+        "from": [
+          "tjenestedreng",
+          "tjenstedreng"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tjenestedreng"
+      },
+      {
+        "from": [
+          "glarmester",
+          "glasmester"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "glarmester"
+      },
+      {
+        "from": [
+          "husjomfru",
+          "husjomfrue"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husjomfru"
+      },
+      {
+        "from": [
+          "eskadron sadelmager",
+          "eskadrons sadelmager"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "eskadron sadelmager"
+      },
+      {
+        "from": [
+          "inderste og almisselem",
+          "inderste og almisslem"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "inderste og almisselem"
+      },
+      {
+        "from": [
+          "spinder",
+          "spinde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "spinder"
+      },
+      {
+        "from": [
+          "skræddersvend",
+          "skrædersvend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "skræddersvend"
+      },
+      {
+        "from": [
+          "inderste, lever af sine hænders gerninger",
+          "inderste, lever af sin hænders gerninger"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "inderste, lever af sine hænders gerninger"
+      },
+      {
+        "from": [
+          "arbejdsmand",
+          "srbejdsmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "arbejdsmand"
+      },
+      {
+        "from": [
+          "inderste og spinderske",
+          "inderske og spinderske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "inderste og spinderske"
+      },
+      {
+        "from": [
+          "tobaksbindermester",
+          "tobakspindermester"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tobaksbindermester"
+      },
+      {
+        "from": [
+          "hans dreng",
+          "hans drenge"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hans dreng"
+      },
+      {
+        "from": [
+          "praktiserende jordemoder",
+          "praktiserende jordmoder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "praktiserende jordemoder"
+      },
+      {
+        "from": [
+          "betjent ved møllen",
+          "betjente ved møllen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "betjent ved møllen"
+      },
+      {
+        "from": [
+          "indereste, daglejerske",
+          "inderste, daglejerske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "indereste, daglejerske"
+      },
+      {
+        "from": [
+          "håndarbejde",
+          "håndarbejder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "håndarbejde"
+      },
+      {
+        "from": [
+          "plejebarn",
+          "plejebørn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "plejebarn"
+      },
+      {
+        "from": [
+          "inderste, forsørges af manden som tjener",
+          "inderste, forsørges af mandens som tjener"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "inderste, forsørges af manden som tjener"
+      },
+      {
+        "from": [
+          "kapellan",
+          "Capellan"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "kapellan"
+      },
+      {
+        "from": [
+          "husmand og daglejer",
+          "huusmand og daglejer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmand og daglejer"
+      },
+      {
+        "from": [
+          "deres datter, væverpige",
+          "deres datter, vævepige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "deres datter, væverpige"
+      },
+      {
+        "from": [
+          "tømmermand",
+          "tømrermand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tømmermand"
+      },
+      {
+        "from": [
+          "sidstnævntes søn",
+          "sidstnævtes søn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "sidstnævntes søn"
+      },
+      {
+        "from": [
+          "tømmersvend",
+          "tømrersvend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tømmersvend"
+      },
+      {
+        "from": [
+          "tjenestepige",
+          "tjenstepige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tjenestepige"
+      },
+      {
+        "from": [
+          "skræddermester",
+          "skæddermester"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "skræddermester"
+      },
+      {
+        "from": [
+          "lever af sin jordlod",
+          "lever af sin jordlov"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "lever af sin jordlod"
+      },
+      {
+        "from": [
+          "inderste og aftægtskone",
+          "inderske og aftægtskone"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "inderste og aftægtskone"
+      },
+      {
+        "from": [
+          "smedelærling",
+          "smedlærling"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "smedelærling"
+      },
+      {
+        "from": [
+          "sadelmager",
+          "saddelmager"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "sadelmager"
+      },
+      {
+        "from": [
+          "inderste, spinderske",
+          "inderske, spinderske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "inderste, spinderske"
+      },
+      {
+        "from": [
+          "husmand, lever af sin jordlod",
+          "husmand, lever sf sin jordlod"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmand, lever af sin jordlod"
+      },
+      {
+        "from": [
+          "tømmermester",
+          "tømrermester"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tømmermester"
+      },
+      {
+        "from": [
+          "tjenestekarl",
+          "tjenstekarl"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tjenestekarl"
+      },
+      {
+        "from": [
+          "mejeribestyrer",
+          "nejeribestyrer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "mejeribestyrer"
+      }
+    ],
+    "description": "Mass edit cells in column occupation"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "gender",
+          "expression": "value",
+          "columnName": "gender",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            },
+            {
+              "v": {
+                "v": "mand",
+                "l": "mand"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "marital_status",
+          "expression": "value",
+          "columnName": "marital_status",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "gift",
+                "l": "gift"
+              }
+            },
+            {
+              "v": {
+                "v": "enkemand",
+                "l": "enkemand"
+              }
+            },
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            },
+            {
+              "v": {
+                "v": "enke",
+                "l": "enke"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "occupation",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "husfaders moder, som af ham forsørges",
+          "husfaders moder, der af ham forsørges",
+          "husfaderens moder, der af ham forsørges",
+          "husfaders fader, der af ham forsørges",
+          "husfaders søster, der af ham forsørges",
+          "husfaders moder og af ham forsørges",
+          "husfaders moder, af ham forsørges",
+          "husmoders moder, der af dem forsørges",
+          "husfaders broder, der af ham forsørges",
+          "husfaders faster, der af ham forsørges",
+          "husmandens moder, der af ham forsørges"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Familiemedlem, der forsørges"
+      },
+      {
+        "from": [
+          "husfaders moder, som af ham forsørges",
+          "husfaders moder, der af ham forsørges",
+          "husfaderens moder, der af ham forsørges",
+          "husfaders fader, der af ham forsørges",
+          "husfaders søster, der af ham forsørges",
+          "husfaders moder og af ham forsørges",
+          "husfaders moder, af ham forsørges",
+          "husfaders broder, der af ham forsørges",
+          "husfaders faster, der af ham forsørges",
+          "husmandens moder, der af ham forsørges"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Familiemedlem, der forsørges"
+      },
+      {
+        "from": [
+          "husfaders moder, der af ham forsørges",
+          "husfaders fader, som af ham forsørges",
+          "husfaderens moder, der af ham forsørges",
+          "husfaders fader, der af ham forsørges",
+          "husfaders fader, af ham forsørges",
+          "husfaders søster, der af ham forsørges",
+          "husmoders fader, der af dem forsørges",
+          "husfaders broder, der af ham forsørges",
+          "husfaders faster, der af ham forsørges",
+          "husfaders stedfader, der af ham forsørges"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Familiemedlem, der forsørges"
+      },
+      {
+        "from": [
+          "husmand, lever af sin jordlod",
+          "husmand, som lever af sin jordlod",
+          "husmand, lever af sin jord",
+          "boelsmand, lever af sin jordlod",
+          "husmand, lever af en jordlod",
+          "husmand lever af hans jordlod",
+          "husmand og lever af sin jordlod",
+          "husmand, lever af sin lod",
+          "hjulmand, lever af en jordlod"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmand, lever af sin jordlod"
+      },
+      {
+        "from": [
+          "husfaders moder, der af ham forsørges",
+          "husfaderens moder, der af ham forsørges",
+          "husfaders fader, der af ham forsørges",
+          "husfaders søster, der af ham forsørges",
+          "husfaders moder, af ham forsørges",
+          "husmoders moder, der af dem forsørges",
+          "husfaders broder, der af ham forsørges",
+          "husfaders faster, der af ham forsørges",
+          "husmandens moder, der af ham forsørges"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Familiemedlem, der forsørges"
+      },
+      {
+        "from": [
+          "husfaders moder, der af ham forsørges",
+          "husfaders fader, som af ham forsørges",
+          "husfaderens moder, der af ham forsørges",
+          "husfaders fader, der af ham forsørges",
+          "husfaders fader, af ham forsørges",
+          "husfaders søster, der af ham forsørges",
+          "husfaders broder, der af ham forsørges",
+          "husfaders faster, der af ham forsørges",
+          "husfaders stedfader, der af ham forsørges"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Familiemedlem, der forsørges"
+      },
+      {
+        "from": [
+          "husfaders moder, som af ham forsørges",
+          "husfaders moder, der af ham forsørges",
+          "husfaderens fader, som af ham forsørges",
+          "husfaders fader, som af ham forsørges",
+          "husfaderens moder, som af ham forsørges",
+          "husfaders moder og af ham forsørges",
+          "husfaders moder, af ham forsørges",
+          "husfaders broder, som af ham forsørges",
+          "husmoders moder, som af dem forsørges"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Familiemedlem, der forsørges"
+      },
+      {
+        "from": [
+          "husfaders moder, der af ham forsørges",
+          "husfaderens moder, der af ham forsørges",
+          "husfaders fader, der af ham forsørges",
+          "husfaders fader, af ham forsørges",
+          "husfaders søster, der af ham forsørges",
+          "husmoders fader, der af dem forsørges",
+          "husfaders broder, der af ham forsørges",
+          "husfaders faster, der af ham forsørges",
+          "husfaders stedfader, der af ham forsørges"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Familiemedlem, der forsørges"
+      },
+      {
+        "from": [
+          "husfaders moder, der af ham forsørges",
+          "husfaders fader, som af ham forsørges",
+          "husfaderens moder, der af ham forsørges",
+          "husfaders fader, der af ham forsørges",
+          "husfaders fader, af ham forsørges",
+          "husmoders fader, der af dem forsørges",
+          "husfaders broder, der af ham forsørges",
+          "husfaders faster, der af ham forsørges",
+          "husfaders stedfader, der af ham forsørges"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Familiemedlem, der forsørges"
+      },
+      {
+        "from": [
+          "husfaders moder, som af ham forsørges",
+          "husfaders moder, der af ham forsørges",
+          "husfaderens moder, der af ham forsørges",
+          "husfaders fader, der af ham forsørges",
+          "husfaders moder og af ham forsørges",
+          "husfaders moder, af ham forsørges",
+          "husmoders moder, der af dem forsørges",
+          "husfaders broder, der af ham forsørges",
+          "husmandens moder, der af ham forsørges"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Familiemedlem, der forsørges"
+      },
+      {
+        "from": [
+          "husfaders moder, som af ham forsørges",
+          "husfaderens fader, som af ham forsørges",
+          "husfaders fader, som af ham forsørges",
+          "husfaderens moder, der af ham forsørges",
+          "husfaderens moder, som af ham forsørges",
+          "husfaderens moder og af ham forsørges",
+          "husfaderens søster, som af ham forsørges",
+          "husfaders broder, som af ham forsørges"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Familiemedlem, der forsørges"
+      },
+      {
+        "from": [
+          "husfaders moder, som af ham forsørges",
+          "husfaders moder, der af ham forsørges",
+          "husfaderens fader, som af ham forsørges",
+          "husfaders fader, som af ham forsørges",
+          "husfaderens moder, som af ham forsørges",
+          "husfaders moder og af ham forsørges",
+          "husfaders moder, af ham forsørges",
+          "husfaders broder, som af ham forsørges"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Familiemedlem, der forsørges"
+      },
+      {
+        "from": [
+          "husfaderens datter",
+          "husfaderens moder",
+          "husfaderens fader",
+          "husfaderens søster",
+          "husfaderens kone",
+          "husfaderens broder",
+          "husfaderens moster",
+          "husfaderens svoger"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husfaderens familie"
+      },
+      {
+        "from": [
+          "husfaders moder, der af ham forsørges",
+          "husfaderens moder, der af ham forsørges",
+          "husfaders fader, der af ham forsørges",
+          "husfaderens moder, som af ham forsørges",
+          "husfaderens moder og af ham forsørges",
+          "husfaderens stedmoder, der af ham forsørges",
+          "husfaders broder, der af ham forsørges",
+          "husmandens moder, der af ham forsørges"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Familiemedlem, der forsørges"
+      },
+      {
+        "from": [
+          "husfaders moder, som af ham forsørges",
+          "husfaderens fader, som af ham forsørges",
+          "husfaders fader, som af ham forsørges",
+          "husfaders fader, der af ham forsørges",
+          "husfaders fader, af ham forsørges",
+          "husfaderens moder, som af ham forsørges",
+          "husfaders broder, som af ham forsørges",
+          "husfaders faster som af ham forsørges"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Familiemedlem, der forsørges"
+      },
+      {
+        "from": [
+          "husfaderens søn",
+          "husfaderens moder",
+          "husfaderens fader",
+          "husfaderens kone",
+          "husfaderens broder",
+          "husfaderens kusine",
+          "husfaderens moster",
+          "husfaderens svoger"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husfaderens familie"
+      },
+      {
+        "from": [
+          "husfaderens datter",
+          "husfaderens moder",
+          "husfaderens fader",
+          "husfaderens søster",
+          "husfaderens broder",
+          "husfaderens steddatter",
+          "husfaderens moster",
+          "husfaderens svoger"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husfaderens familie"
+      }
+    ],
+    "description": "Mass edit cells in column occupation"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "gender",
+          "expression": "value",
+          "columnName": "gender",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            },
+            {
+              "v": {
+                "v": "mand",
+                "l": "mand"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "marital_status",
+          "expression": "value",
+          "columnName": "marital_status",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "gift",
+                "l": "gift"
+              }
+            },
+            {
+              "v": {
+                "v": "enkemand",
+                "l": "enkemand"
+              }
+            },
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            },
+            {
+              "v": {
+                "v": "enke",
+                "l": "enke"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "occupation",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "husfaders moder",
+          "husfaders broder",
+          "husfaders steddatter",
+          "husfaders søster",
+          "husfaders datter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husfaders familie"
+      }
+    ],
+    "description": "Mass edit cells in column occupation"
+  }
+]
