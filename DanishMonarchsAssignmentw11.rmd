@@ -1,0 +1,140 @@
+---
+title: "Danish Kings"
+author: "Luna, Nina, STephanie and Andrea"
+date: "10/5- 2026"
+output: html_document
+---
+
+```{r setup, include=TRUE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+The task here is to load your Danish Monarchs csv into R using the `tidyverse` toolkit, calculate and explore the kings' duration of reign with pipes `%>%` in `dplyr` and plot it over time.
+
+## Load the kings
+
+```{r eval=FALSE}
+library(tidyverse)
+
+dir.create("data")
+dir.create("figures")
+
+```
+
+```{r eval = TRUE}
+#CODE
+
+kings <- read_csv2("data/danishmonarchscsv.csv", na = c("na"))
+
+class(kings)
+glimpse(kings)
+
+```
+
+
+## Calculate the duration of reign for all the kings in your table
+
+Create a new column called  `duration` in the kings dataset, utilizing the `mutate()` function from tidyverse. Check with your group to brainstorm the options.
+
+```{r}
+# CODE
+view(kings) 
+
+kings <- kings %>%
+  mutate(duration = if_else(
+    is.na(beg_reg_y) | is.na(end_reg_y),
+    NA_real_,                     # If end or start NA then duration NA
+    end_reg_y - beg_reg_y       # if not calculate duration
+  ))
+
+
+```
+
+## Calculate the average duration of reign for all rulers
+
+```{r}
+# CODE
+kings %>%
+  summarise(mean(duration, na.rm=TRUE)) # calculates average without missing
+
+avg_duration <- kings %>%
+  summarise(avg = mean(duration, na.rm = TRUE)) %>%
+  pull(avg) # now the average is saved as a value.
+```
+
+## How many and which kings enjoyed a longer-than-average duration of reign?
+
+```{r}
+# CODE
+
+kings %>%
+  filter(duration >avg_duration) %>% #filter only above average
+  count() # counts how many rules are above average duration
+
+```
+
+
+## How many days did the three longest-ruling monarchs rule? 
+
+```{r}
+# CODE
+
+top_three <- kings %>%
+  arrange(desc(duration)) %>%     # arranges from high to low duration
+  slice_head(n = 3)               # picks the 3 highest
+  top_three_days_simple <- top_three %>%
+  mutate(Days = duration * 365L)
+  
+view(top_three)
+  
+#With leapyear taken into consideration: 
+  count_leaps <- function(start_year, end_year) { # creates function
+  yrs <- seq(start_year, end_year - 1)              # creates sequence counting whole years in duration
+  is_leap <- (yrs %% 400 == 0) | (yrs %% 4 == 0 & yrs %% 100 != 0) # test if year is leapyear
+  sum(is_leap, na.rm = TRUE) # counts leapyears 
+}
+# calculating for the three monarcs with leap years
+
+  top_three_days_bonus <- top_three %>%
+  rowwise() %>% # does it row by row
+  mutate(
+    LeapDays = count_leaps(beg_reg_y, end_reg_y), #counts leap years
+    Days_adjusted = duration * 365L + LeapDays      # years in days + leap days
+  ) %>%
+  ungroup() # end of rowwise
+
+select(top_three_days_bonus, name, Days_adjusted) # shows the results
+
+```
+
+
+## Challenge: Plot the kings' duration of reign through time
+
+
+```{r}
+#CODE
+
+# creates the midyear column
+kings <- kings %>%
+  mutate(midyear = beg_reg_y + (duration / 2)      # calculates reign half way point
+  )
+
+# removes missing/ na observations
+kings_clean <- kings %>%  
+  filter(!is.na(midyear), !is.na(duration)) # only keep columns where both midyear and duration is not NA
+
+# creates plot
+library(ggplot2)
+Duration_of_Reign_Over_Time <- ggplot(kings_clean, aes(x = midyear, y = duration)) +
+  geom_point(size = 3, alpha = 0.7) + # creates points in plot
+  geom_smooth(method = "loess", se = FALSE, color = "blue") + # creates the line in plot
+  theme_bw(base_size = 16) +   # sort/hvid og større font
+  labs(
+    title = "Duration of Reign Over Time",
+    x = "Midyear of Reign",
+    y = "Duration of Reign (years)"
+  )
+ ggsave("figures/Duration_of_Reign_Over_Time.png", plot = Duration_of_Reign_Over_Time)
+
+```
