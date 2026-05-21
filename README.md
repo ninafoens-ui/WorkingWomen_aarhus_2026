@@ -74,7 +74,7 @@ OpenRefine: Creative Commons Attribution 4.0 International License.
 
 Contributors names and contact info
 
-Luna Marie Swchartz Marcher: 202307449@post.au.dk
+Luna Marie Schwartz Marcher: 202307449@post.au.dk
 Andrea Sif Bragadottir: 202306457@post.au.dk
 Stephanie Torpdahl Joel: 202304548@post.au.dk
 Nina Føns Sørensen: 202308085@post.au.dk
